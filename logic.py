@@ -16,3 +16,8 @@ else:
     else:
         req_ex=input("enter the required file extension with . : ")
         req_files=[]
+                for each_f in all_f_ds:
+            if each_f.endswith(req_ex):
+                req_files.append(each_f)
+        if len(req_files)==0:
+            print(f"There are no {req_ex} files here")
