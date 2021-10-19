@@ -21,3 +21,6 @@ else:
                 req_files.append(each_f)
         if len(req_files)==0:
             print(f"There are no {req_ex} files here")
+        else:
+            print(f"The are {len(req_files)} files with extension of {req_ex} ")
+            print(f"So, the files are {req_files}")
